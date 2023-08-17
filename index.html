@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator Made by Nikhil Kumar</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="utils.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ <h1 class="text-center">Welcome to My Calculator</h1>
+<div class="container flex flex-col items-center bg-red mx-auto">
+    <!-- <div class="row">
+      <input class="i/p" type="text"/>
+    </div> -->
+
+    <div class = "row">
+      <input id = "input" class = "ip" type = "text">
+    </div>
+    <hr>
+    <div >
+      <span id = "result"></span>
+    </div>
+  <div class="row">
+  <button class="button" onclick="clearInput()" >C</button>
+  <button class="button"  onclick="appendToInput('%')" >%</button>
+  <button class="button"  onclick="appendToInput('10')" >10</button>
+  <button class="button"  onclick="appendToInput('11')" >11</button>
+ </div>
+ <div class="row">
+  <button class="button"  onclick="appendToInput('7')" >7</button>
+  <button class="button"  onclick="appendToInput('8')" >8</button>
+  <button class="button"  onclick="appendToInput('9')" >9</button>
+  <button class="button"  onclick="appendToInput('*')" >*</button>
+ </div>
+  
+  <div class="row">
+  <button class="button"  onclick="appendToInput('4')" >4</button>
+  <button class="button"  onclick="appendToInput('5')" >5</button>
+  <button class="button"  onclick="appendToInput('6')" >6</button>
+  <button class="button"  onclick="appendToInput('/')" >/</button>
+ </div>
+   <div class="row">
+  <button class="button"  onclick="appendToInput('1')" >1</button>
+  <button class="button"  onclick="appendToInput('2')" >2</button>
+  <button class="button" onclick="appendToInput('3')" >3</button>
+  <button class="button"  onclick="appendToInput('+')" >+</button>
+ </div>
+
+  <div class="row">
+  <button class="button"  onclick="appendToInput('0')" >0</button>
+  <button class="button"  onclick="appendToInput('.')" >.</button>
+  <button class="button"  onclick="appendToInput('=')" >=</button>
+  <button class="button"  onclick="appendToInput('-')" >-</button>
+ </div>
+  
+</div>
+
+
+
+
+
+
+  
+  <script src="script.js"></script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
