@@ -34,12 +34,17 @@ Array.from(buttons).forEach((button) => {
       console.log(e.target.innerHTML);
       if(string.length>1){
       let string1 = string.slice(-1);
+
       console.log(string1);
       if(string1===e.target.innerHTML && (string1==="*"|| string1==="/"||string1==="+"|| string1==="-" || string1===".") )
       {
       // if(string1===e.target.innerHTML){
         
         string = string;
+
+      }
+      else if((e.target.innerHTML==="*" || e.target.innerHTML==="+" || e.target.innerHTML==="/"||e.target.innerHTML==="-"|| e.target.innerHTML===".") && (string1==="*"|| string1==="/"||string1==="+"|| string1==="-" || string1===".")){
+        string=string;
       }
 
       else{
@@ -92,8 +97,11 @@ function clearInput(){
 
 function updateResult() {
   // try {
+    
     const inputField = input.value;
     console.log(inputField);
+   
+    
     if(inputField.includes( "/0")){
       string = "Cannot be divided by zero";
       output.textContent = string;
