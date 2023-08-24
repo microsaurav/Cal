@@ -25,8 +25,9 @@ Array.from(buttons).forEach((button) => {
       document.querySelector("input").value = string;
     }
     else if(e.target.innerHTML=="%"){
-      string = string/100;
-      output.textContent = string;
+      // string = string/100;   changes for % done here
+      
+      output.textContent = output.textContent/100;
     }
     
     else {
